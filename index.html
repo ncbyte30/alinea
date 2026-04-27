@@ -1,0 +1,90 @@
+<style>
+        .contact-section {
+            padding: 80px 8%;
+            background: var(--dark);
+            color: white;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        .contact-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .img-maylin {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 3px solid var(--secondary);
+        }
+        .img-tarjeta {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .contact-info {
+            flex: 1;
+        }
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--secondary);
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .info-item i {
+            color: var(--yellow);
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .contact-section { flex-direction: column; text-align: center; }
+            .info-item { justify-content: center; }
+        }
+    </style>
+
+    <section class="contact-section">
+        <div class="contact-images">
+            <img src="foto-maylin.jpg" alt="Maylin Michinel - Agente Integral" class="img-maylin">
+            <img src="tarjeta-presentacion.png" alt="Tarjeta Alinea Insurance" class="img-tarjeta">
+        </div>
+
+        <div class="contact-info">
+            <h2>Lic. Maylin Michinel</h2>
+            <p>¡Tú agente integral!</p>
+            
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>(407) 219-7749</span>
+            </div>
+            <div class="info-item">
+                <i class="fab fa-instagram"></i>
+                <span>@maylinmichinel</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-globe"></i>
+                <span>www.alineainsurance.com</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Orlando, Florida</span>
+            </div>
+
+            <a href="https://wa.me/14072197749" class="btn-calc" style="display: inline-block; margin-top: 20px; background: #25d366; color: white;">
+                <i class="fab fa-whatsapp"></i> Contactar ahora
+            </a>
+        </div>
+    </section>
